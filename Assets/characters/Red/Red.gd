@@ -1,7 +1,7 @@
 extends Character
 
 onready var sprite = $Sprite
-onready var hitBox = $hitBox
+onready var hitBox = $HitBox/hitBox
 var is_jumping = false
 func _ready():
 	hitBox.set_disabled(true)

@@ -328,6 +328,7 @@ animations = [ {
 extents = Vector2( 10, 15 )
 
 [node name="Lil\' Red" type="KinematicBody2D"]
+collision_mask = 6
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -339,6 +340,8 @@ frames = SubResource( 63 )
 animation = "Jump"
 frame = 10
 
-[node name="hitBox" type="CollisionShape2D" parent="."]
+[node name="HitBox" type="Area2D" parent="."]
+
+[node name="hitBox" type="CollisionShape2D" parent="HitBox"]
 position = Vector2( -17, 15 )
 shape = SubResource( 73 )
